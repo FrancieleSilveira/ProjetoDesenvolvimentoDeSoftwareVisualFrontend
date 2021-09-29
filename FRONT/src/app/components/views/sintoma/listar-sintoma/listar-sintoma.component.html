@@ -1,0 +1,8 @@
+<a routerLink="/sintoma/cadastrar">Cadastrar Sintoma</a>
+
+<ol>
+    <li *ngFor="let sintoma of sintomas">
+        {{ sintoma.nome }}
+        <!-- <a routerLink="/sintoma/editar/{{ sintoma.id }}">Editar Sintoma</a> -->
+    </li>
+</ol>
