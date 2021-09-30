@@ -22,13 +22,13 @@
         <td>{{ enfermeiro.telefone }}</td>
         <td>{{ enfermeiro.email }}</td>
         <td>{{ enfermeiro.endereco }}</td>
-        <td><a routerLink="/enfermeiro/editar/{{ enfermeiro.id }}">Editar Sintoma</a></td> 
+        <td><a routerLink="/enfermeiro/editar/{{ enfermeiro.id }}">Editar Enfermeiro</a></td> 
 
         <td><button (click)="deletar(enfermeiro.id)">Deletar</button></td>   
         
      </tr>
 </table>
-
+<br>
 <a routerLink="/enfermeiro/cadastrar">Clique aqui para cadastrar um novo enfermeiro</a>
 
 
