@@ -9,6 +9,7 @@ import { Router } from "@angular/router";
     styleUrls: ["./listar-sintoma.component.css"],
 })
 export class ListarSintomaComponent implements OnInit {
+
     sintomas: Sintoma[] = [];
 
     constructor(private router: Router, private service: SintomaService) {}
@@ -21,11 +22,7 @@ export class ListarSintomaComponent implements OnInit {
     }
 
     deletar(id: any) {
-        this.service.delete(id).subscribe((id) => {
-        
-        });
-        this.router.navigate(["sintoma/listar"]);
+        this.service.delete(id).subscribe((id) => {});
+        this.router.navigate([""]);
     }
-    
-    
 }

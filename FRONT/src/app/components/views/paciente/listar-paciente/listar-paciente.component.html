@@ -15,7 +15,7 @@
     </tr>
     <tr *ngFor="let paciente of pacientes">
 
-        <td>{{ paciente.convenio }}</td>
+        <td>{{ paciente.convenioId }}</td>
         <td>{{ paciente.nome }} </td>
         <td>{{ paciente.sobrenome }}</td>
         <td>{{ paciente.cpf }}</td>
@@ -30,5 +30,5 @@
      </tr>
 </table>
 
-<a routerLink="/paciente/cadastrar">Clique aqui para cadastrar um novo enfermeiro</a>
+<a routerLink="/paciente/cadastrar">Clique aqui para cadastrar um novo paciente</a>
 

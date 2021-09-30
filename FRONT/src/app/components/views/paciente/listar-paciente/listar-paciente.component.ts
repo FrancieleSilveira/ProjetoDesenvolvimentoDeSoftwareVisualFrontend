@@ -9,19 +9,20 @@ import { PacienteService } from 'src/app/services/paciente.service';
   styleUrls: ['./listar-paciente.component.css']
 })
 export class ListarPacienteComponent implements OnInit {
+
   pacientes: Paciente[] = [];
+
   constructor(private router: Router, private service: PacienteService) { }
 
   ngOnInit(): void {
-    this.service.list().subscribe((paciente =>{
-      console.log(paciente);
-      this.pacientes = paciente;
-    }));
+    this.service.list().subscribe((pacientes) => {
+      this.pacientes = pacientes;
+      console.log(pacientes);
+    });
   }
 
   deletar(id: any) {
     this.service.delete(id).subscribe((id) => {});
     this.router.navigate([""]);               
   }
-
 }
