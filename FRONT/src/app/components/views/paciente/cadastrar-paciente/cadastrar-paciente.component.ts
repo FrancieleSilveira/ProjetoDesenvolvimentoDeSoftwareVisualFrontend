@@ -11,7 +11,8 @@ import { PacienteService } from 'src/app/services/paciente.service';
 })
 export class CadastrarPacienteComponent implements OnInit {
 
-  convenioId!: string;  
+  convenioId!: string;
+  convenio!: string;  
   matricula!: string;
   nome!: string;
   sobrenome!: string;
@@ -29,6 +30,7 @@ export class CadastrarPacienteComponent implements OnInit {
     let paciente: Paciente = {
 
       convenioId: parseInt(this.convenioId),
+      convenio: this.convenio,
       nome: this.nome,
       sobrenome: this.sobrenome,
       cpf: this.cpf,
