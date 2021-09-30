@@ -18,4 +18,6 @@ export class ListarSintomaComponent implements OnInit {
             console.log(sintomas);
         });
     }
+    
+    
 }
