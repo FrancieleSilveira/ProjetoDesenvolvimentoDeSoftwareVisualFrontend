@@ -26,4 +26,6 @@ export class ListarSintomaComponent implements OnInit {
         });
         this.router.navigate(["sintoma/listar"]);
     }
+    
+    
 }

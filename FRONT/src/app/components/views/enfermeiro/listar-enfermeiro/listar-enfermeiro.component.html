@@ -1,0 +1,33 @@
+<h1> Enfermeiros Cadastrados</h1>
+
+<table>
+    <tr>
+      <th>Matrícula</th>
+      <th>Nome </th>
+      <th>Sobrenome</th>
+      <th>CPF</th>
+      <th>Idade</th>
+      <th>Telefone</th>
+      <th>E-mail</th>
+      <th>Endereço</th>
+      <th>Editar</th>
+      <th>Excluir</th>
+    </tr>
+    <tr *ngFor="let enfermeiro of enfermeiros">
+        <td>{{ enfermeiro.matricula }}</td>
+        <td>{{ enfermeiro.nome }} </td>
+        <td>{{ enfermeiro.sobrenome }}</td>
+        <td>{{ enfermeiro.cpf }}</td>
+        <td>{{ enfermeiro.idade }}</td>
+        <td>{{ enfermeiro.telefone }}</td>
+        <td>{{ enfermeiro.email }}</td>
+        <td>{{ enfermeiro.endereco }}</td>
+        <td><a routerLink="/enfermeiro/editar/{{ enfermeiro.id }}">Excluir Sintoma</a></td> 
+        <td><button (click)="delete(enfermeiro.id)">Deletar</button></td>   
+        
+     </tr>
+</table>
+
+<a routerLink="/enfermeiro/cadastrar">Clique aqui para cadastrar um novo enfermeiro</a>
+
+
