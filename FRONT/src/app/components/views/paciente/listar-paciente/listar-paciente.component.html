@@ -2,12 +2,11 @@
 
 <table>
     <tr>
-      <th>Convênio Id </th>
       <th>Convênio </th>
       <th>Nome </th>
       <th>Sobrenome</th>
       <th>CPF</th>
-      <th>Data de nascimento</th>
+      <th>Idade</th>
       <th>Telefone</th>
       <th>E-mail</th>
       <th>Endereço</th>
@@ -16,21 +15,20 @@
     </tr>
     <tr *ngFor="let paciente of pacientes">
 
-        <td>{{ paciente.convenioId }}</td>
-        <td>{{ paciente.convenio}}</td>
+        <td>{{ paciente.convenioNome}}</td>
         <td>{{ paciente.nome }} </td>
         <td>{{ paciente.sobrenome }}</td>
         <td>{{ paciente.cpf }}</td>
-        <td>{{ paciente.datanascimento }}</td>
+        <td>{{ paciente.idade }}</td>
         <td>{{ paciente.telefone }}</td>
         <td>{{ paciente.email }}</td>
         <td>{{ paciente.endereco }}</td>
-        <!-- <td><a routerLink="/paciente/editar/{{ paciente.id }}">Editar paciente</a></td>  -->
+        <td><a routerLink="/paciente/editar/{{ paciente.id }}">Editar paciente</a></td>
     
         <td><button (click)="deletar(paciente.id)">Deletar</button></td>   
         
      </tr>
 </table>
-
+<br>
 <a routerLink="/paciente/cadastrar">Clique aqui para cadastrar um novo paciente</a>
 

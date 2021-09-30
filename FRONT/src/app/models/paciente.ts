@@ -1,11 +1,11 @@
 export interface Paciente {
     id?: number;
-    convenioId: number;
-    convenio: string;
+    convenioNome: string;
+    //convenio: string;
     nome: string;
     sobrenome: string;
     cpf: string;
-    datanascimento: number;
+    idade: number;
     telefone: string;
     email: string;
     endereco: string;
