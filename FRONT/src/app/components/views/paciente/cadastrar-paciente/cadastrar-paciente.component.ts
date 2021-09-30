@@ -27,12 +27,12 @@ export class CadastrarPacienteComponent implements OnInit {
 
   cadastrar(): void {
     let paciente: Paciente = {
-      
+
       convenio: this.convenio,
       nome: this.nome,
       sobrenome: this.sobrenome,
       cpf: this.cpf,
-      dataNascimento: parseInt(this.dataNascimento),
+      datanascimento: parseInt(this.dataNascimento),
       telefone: this.telefone,
       email: this.email,
       endereco: this.endereco

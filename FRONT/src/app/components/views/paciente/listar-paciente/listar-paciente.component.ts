@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Paciente } from 'src/app/models/paciente';
-import { EnfermeiroService } from 'src/app/services/enfermeiro.service';
 import { PacienteService } from 'src/app/services/paciente.service';
 
 @Component({
