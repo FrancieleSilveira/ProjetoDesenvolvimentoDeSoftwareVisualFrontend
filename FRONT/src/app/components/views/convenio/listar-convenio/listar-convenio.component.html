@@ -1,0 +1,23 @@
+<h1>Convênios Cadastrados</h1>
+
+<table>
+    <tr>
+      <th>Convênio</th>
+      <th>Endereço</th>
+      <th>Telefone</th>
+      <!-- <th>Editar</th> -->
+      <th>Deletar</th>
+    </tr>
+    <tr *ngFor="let convenio of convenios">
+        <td>{{ convenio.nome }} </td>
+        <td>{{ convenio.endereco }}</td>
+        <td>{{ convenio.telefone }}</td>
+        <!-- <td><a routerLink="/convenio/editar/{{ convenio.id }}">Editar</a></td>  -->
+        <td><button (click)="deletar(convenio.nome)">Deletar</button></td>           
+     </tr>
+</table>
+<br>
+<a routerLink="/convenio/cadastrar">Clique aqui para cadastrar um novo convênio</a>
+
+
+

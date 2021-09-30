@@ -7,6 +7,9 @@ import { ListarSintomaComponent } from "./components/views/sintoma/listar-sintom
 import { CadastrarPacienteComponent } from "./components/views/paciente/cadastrar-paciente/cadastrar-paciente.component";
 import { ListarPacienteComponent } from "./components/views/paciente/listar-paciente/listar-paciente.component";
 import { ListarEnfermeiroComponent } from './components/views/enfermeiro/listar-enfermeiro/listar-enfermeiro.component';
+import { ListarConvenioComponent } from './components/views/convenio/listar-convenio/listar-convenio.component';
+import { CadastrarConvenioComponent } from './components/views/convenio/cadastrar-convenio/cadastrar-convenio.component';
+import { EditarConvenioComponent } from './components/views/convenio/editar-convenio/editar-convenio.component';
 
 
 const routes: Routes = [
@@ -14,6 +17,21 @@ const routes: Routes = [
     {
         path: "",
         component: MenuComponent,
+    },
+
+    //convênio
+
+    {
+        path: "convenio/listar",
+        component: ListarConvenioComponent,
+    },
+    {
+        path: "convenio/cadastrar",
+        component: CadastrarConvenioComponent,
+    },
+    {
+        path: "convenio/editar",
+        component: EditarConvenioComponent,
     },
 
     //sintoma
@@ -26,6 +44,10 @@ const routes: Routes = [
         path: "sintoma/cadastrar",
         component: CadastrarSintomaComponent,
     },
+    // {
+    //     path: "sintoma/editar",
+    //     component: EditarSintomaComponent,
+    // },
 
     //paciente
     {
@@ -37,6 +59,11 @@ const routes: Routes = [
         component: ListarPacienteComponent,
 
     },
+    // {
+    //     path: "paciente/editar",
+    //     component: EditarPacienteComponent,
+    // },
+
     //enfermeiro
 
     {
@@ -46,8 +73,11 @@ const routes: Routes = [
     {
         path: "enfermeiro/cadastrar",
         component: CadastrarEnfermeiroComponent,
-
     },
+    // {
+    //     path: "enfermeiro/editar",
+    //     component: EditarEnfermeiroComponent,
+    // },
 ];
 
 @NgModule({

@@ -1,0 +1,22 @@
+<h1> Cadastrar novo convênio</h1>
+
+<div id="nome">
+    <label for="nome">Nome: </label><br>
+    <input type="text" name="nome" [(ngModel)] = "nome"/>
+</div>
+
+<div id="endereco">
+    <label for="endereco">Endereço: </label><br>
+    <input type="text" name="endereco" [(ngModel)] = "endereco"/>
+</div>
+
+<div id="telefone">
+    <label for="telefone">Telefone: </label><br>
+    <input type="text" name="telefone" [(ngModel)] = "telefone"/>
+</div>
+
+<button (click)="cadastrar()">Cadastrar</button><br>
+
+<a routerLink="">Voltar para o menu principal</a>
+
+
