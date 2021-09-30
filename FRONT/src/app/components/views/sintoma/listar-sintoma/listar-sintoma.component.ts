@@ -20,12 +20,6 @@ export class ListarSintomaComponent implements OnInit {
         });
     }
 
-    // deletar(id: number): void {
-    //     console.log(this.sintomas[0].id);
-    //     this.service.delete(this.sintomas[0].id);
-    //     this.router.navigate(["sintoma/listar"]);
-    // }
-
     deletar(id: any) {
         this.service.delete(id).subscribe((id) => {
         
