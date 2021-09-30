@@ -17,7 +17,18 @@ export class SintomaService {
     create(sintoma: Sintoma): Observable<Sintoma> {
         return this.http.post<Sintoma>(`${this.baseUrl}/create`, sintoma);
     }
-    delete(sintoma: Sintoma): Observable<Sintoma> {
-        return this.http.post<Sintoma>(`${this.baseUrl}delete/{nome}`, sintoma.nome);
-    }
+    // delete(sintoma: Sintoma): Observable<Sintoma> {
+    //     return this.http.delete<Sintoma>(`${this.baseUrl}/delete/${sintoma.nome}`);
+    // }
+    // delete(sintoma: Sintoma){
+    //     var url = `${this.baseUrl}/delete/${sintoma.id}`;
+    //     console.log(url);
+    //     return this.http.delete(url);
+    // }
+    // delete(sintoma: Sintoma): Observable<Sintoma> {
+    //     return this.http.post<Sintoma>(`${this.baseUrl}/delete/`, sintoma.nome);
+    // }
+    delete(id: number): Observable<Sintoma> {
+        return this.http.delete<Sintoma>(`${this.baseUrl}/delete/${id}`);
+      }
 }

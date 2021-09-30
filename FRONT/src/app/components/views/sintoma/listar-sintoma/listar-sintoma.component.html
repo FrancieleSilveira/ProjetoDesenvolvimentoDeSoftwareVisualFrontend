@@ -1,8 +1,16 @@
-<a routerLink="/sintoma/cadastrar">Cadastrar Sintoma</a>
+<h1> Sintomas Cadastrados</h1>
 
-<ol>
-    <li *ngFor="let sintoma of sintomas">
-        {{ sintoma.nome }}
-        <!-- <a routerLink="/sintoma/editar/{{ sintoma.id }}">Editar Sintoma</a> -->
-    </li>
-</ol>
+<table>
+    <tr>
+      <th>Nome</th>
+      <th>Grau Intensidade</th>
+      <th>Ação</th>
+    </tr>
+    <tr *ngFor="let sintoma of sintomas">
+        <td>{{ sintoma.nome }}</td>
+        <td>{{ sintoma.grauIntensidade }}</td>
+        <td><button (click)="deletar(sintoma.id)">Deletar</button></td>
+     </tr>
+</table>
+
+<button ><a routerLink="/sintoma/cadastrar">Cadastrar Sintoma</a></button>

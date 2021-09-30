@@ -7,14 +7,12 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { CadastrarSintomaComponent } from "./components/views/sintoma/cadastrar-sintoma/cadastrar-sintoma.component";
 import { ListarSintomaComponent } from "./components/views/sintoma/listar-sintoma/listar-sintoma.component";
-import {DeletarSintomaComponent} from "./components/views/sintoma/deletar-sintoma/deletar-sintoma.component";
 
 @NgModule({
     declarations: [
         AppComponent,
         ListarSintomaComponent,
         CadastrarSintomaComponent,
-        DeletarSintomaComponent
     ],
     imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
     providers: [],
