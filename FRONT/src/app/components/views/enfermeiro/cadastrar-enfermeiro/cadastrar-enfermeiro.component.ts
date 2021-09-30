@@ -14,7 +14,7 @@ export class CadastrarEnfermeiroComponent implements OnInit {
   nome!: string;
   sobrenome!: string;
   cpf!: string;
-  idade!: string;
+  dataNascimento!: string;
   telefone!: string;
   email!: string;
   endereco!: string;
@@ -29,7 +29,7 @@ export class CadastrarEnfermeiroComponent implements OnInit {
       nome: this.nome,
       sobrenome: this.sobrenome,
       cpf: this.cpf,
-      idade: parseInt(this.idade),
+      datanascimento: parseInt(this.dataNascimento),
       telefone: this.telefone,
       email: this.email,
       endereco: this.endereco

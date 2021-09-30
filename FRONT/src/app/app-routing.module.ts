@@ -12,7 +12,7 @@ import { ListarEnfermeiroComponent } from './components/views/enfermeiro/listar-
 const routes: Routes = [
         
     {
-        path: "menu/listar",
+        path: "",
         component: MenuComponent,
     },
 

@@ -1,6 +1,7 @@
 import { EnfermeiroService } from './../../../../services/enfermeiro.service';
 import { Enfermeiro } from './../../../../models/enfermeiro';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listar-enfermeiro',
@@ -10,9 +11,8 @@ import { Component, OnInit } from '@angular/core';
 export class ListarEnfermeiroComponent implements OnInit {
 
   enfermeiros: Enfermeiro[] = [];
-  enfermeiro!: Enfermeiro;
 
-  constructor(private service: EnfermeiroService) { }
+  constructor(private router: Router, private service: EnfermeiroService) { }
 
   ngOnInit(): void {
     this.service.list().subscribe((enfermeiros) => {
@@ -21,11 +21,9 @@ export class ListarEnfermeiroComponent implements OnInit {
     });
   }
 
-  delete(id: any) {
-    this.service.delete(id).subscribe((id) => {
-      //console.log(this.enfermeiro);
-
-    });
+  deletar(id: any) {
+    this.service.delete(id).subscribe((id) => {});
+    this.router.navigate([""]);
   }
 
 }

@@ -13,7 +13,16 @@ export class PacienteService {
   list(): Observable<Paciente[]> {
     return this.http.get<Paciente[]>(`${this.baseUrl}/list`);
   }
+  
   create(paciente: Paciente): Observable<Paciente> {
       return this.http.post<Paciente>(`${this.baseUrl}/create`, paciente);
+  }
+
+  update(paciente: Paciente): Observable<Paciente> {
+    return this.http.put<Paciente>(`${this.baseUrl}/update`, paciente);
+  }
+
+  delete(id: number): Observable<Paciente> {
+    return this.http.delete<Paciente>(`${this.baseUrl}/delete/${id}`);
   }
 }

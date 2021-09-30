@@ -16,13 +16,16 @@ export class EnfermeiroService {
   list(): Observable<Enfermeiro[]> {
     return this.http.get<Enfermeiro[]>(`${this.baseUrl}/list`);
   }
+
   create(enfermeiro: Enfermeiro): Observable<Enfermeiro> {
     return this.http.post<Enfermeiro>(`${this.baseUrl}/create`, enfermeiro);
   }
-  Update(enfermeiro: Enfermeiro): Observable<Enfermeiro> {
+
+  update(enfermeiro: Enfermeiro): Observable<Enfermeiro> {
     return this.http.put<Enfermeiro>(`${this.baseUrl}/update`, enfermeiro);
   }
+  
   delete(id: number): Observable<Enfermeiro> {
-    return this.http.delete<Enfermeiro>(`${this.baseUrl}delete/${id}`);
+    return this.http.delete<Enfermeiro>(`${this.baseUrl}/delete/${id}`);
   }
 }

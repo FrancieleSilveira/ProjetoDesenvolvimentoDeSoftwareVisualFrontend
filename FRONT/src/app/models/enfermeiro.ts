@@ -5,7 +5,7 @@ export interface Enfermeiro {
        nome: string;
        sobrenome: string;
        cpf: string;
-       idade: number;
+       datanascimento: number;
        telefone: string;
        email: string;
        endereco: string;
