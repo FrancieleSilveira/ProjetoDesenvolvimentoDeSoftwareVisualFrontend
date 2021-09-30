@@ -18,12 +18,12 @@
         <td>{{ enfermeiro.nome }} </td>
         <td>{{ enfermeiro.sobrenome }}</td>
         <td>{{ enfermeiro.cpf }}</td>
-        <td>{{ enfermeiro.idade }}</td>
+        <td>{{ enfermeiro.datanascimento }}</td>
         <td>{{ enfermeiro.telefone }}</td>
         <td>{{ enfermeiro.email }}</td>
         <td>{{ enfermeiro.endereco }}</td>
         <td><a routerLink="/enfermeiro/editar/{{ enfermeiro.id }}">Editar Sintoma</a></td> 
-        <td><button (click)="delete(enfermeiro.id)">Deletar</button></td>   
+        <td><button (click)="deletar(enfermeiro.id)">Deletar</button></td>   
         
      </tr>
 </table>
