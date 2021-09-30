@@ -1,0 +1,36 @@
+a{
+    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;    
+    color: azure;
+    background-color: palevioletred;
+}
+
+a:hover{
+    color: deeppink;
+    background-color: azure;
+}
+
+h3{
+    color: rgb(223, 25, 131);
+}
+
+
+div{
+       
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    width: 300px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color:palevioletred;
+    margin: auto;
+    
+}
