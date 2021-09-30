@@ -23,6 +23,7 @@
         <td>{{ enfermeiro.email }}</td>
         <td>{{ enfermeiro.endereco }}</td>
         <td><a routerLink="/enfermeiro/editar/{{ enfermeiro.id }}">Editar Sintoma</a></td> 
+
         <td><button (click)="deletar(enfermeiro.id)">Deletar</button></td>   
         
      </tr>

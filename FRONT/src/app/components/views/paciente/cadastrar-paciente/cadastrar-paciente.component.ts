@@ -27,7 +27,7 @@ export class CadastrarPacienteComponent implements OnInit {
 
   cadastrar(): void {
     let paciente: Paciente = {
-      
+
       convenio: this.convenio,
       nome: this.nome,
       sobrenome: this.sobrenome,
