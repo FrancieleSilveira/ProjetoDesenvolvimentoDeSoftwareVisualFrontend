@@ -1,1 +1,47 @@
-<p>editar-paciente works!</p>
+<h1>Editar paciente:</h1>
+
+<div id="convenioNome">
+    <label for="convenioNome">Convênio</label><br>
+    <input type="text" name="convenioNome" [(ngModel)] = "convenioNome"/>
+</div>
+
+<div id="nome">
+    <label for="nome">Nome</label><br>
+    <input type="text" name="nome" [(ngModel)] = "nome"/>
+</div>
+
+<div id="sobrenome">
+    <label for="sobrenome">Sobrenome</label><br>
+    <input type="text" name="sobrenome" [(ngModel)] = "sobrenome"/>
+</div>
+
+<div id="cpf">
+    <label for="cpf">Cpf</label><br>
+    <input type="text" name="cpf" [(ngModel)] = "cpf"/>
+</div>
+
+<div id="idade">
+    <label for="idade">Idade</label><br>
+    <input type="number" name="idade" [(ngModel)] = "idade"/>
+</div>
+
+<div id="telefone">
+    <label for="telefone">Telefone</label><br>
+    <input type="text" name="telefone" [(ngModel)] = "telefone"/>
+</div>
+
+<div id="email">
+    <label for="email">E-mail</label><br>
+    <input type="text" name="email" [(ngModel)] = "email"/>
+</div>
+
+<div id="endereco">
+    <label for="endereco">Endereço</label><br>
+    <input type="text" name="endereco" [(ngModel)] = "endereco"/>
+</div><br>
+
+<button (click)="editar()">Editar</button>
+
+
+
+

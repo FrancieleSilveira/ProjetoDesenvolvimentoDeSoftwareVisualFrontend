@@ -19,5 +19,8 @@ export class SintomaService {
     }
     delete(id: number): Observable<Sintoma> {
         return this.http.delete<Sintoma>(`${this.baseUrl}/delete/${id}`);
-      }
+    }
+    update(sintoma: Sintoma): Observable<Sintoma> {
+        return this.http.put<Sintoma>(`${this.baseUrl}/update`, sintoma);
+    }
 }

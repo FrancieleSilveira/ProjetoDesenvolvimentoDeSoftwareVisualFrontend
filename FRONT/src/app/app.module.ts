@@ -17,6 +17,7 @@ import { MenuComponent } from "./components/views/menu/menu.component";
 import { EditarPacienteComponent } from './components/views/paciente/editar-paciente/editar-paciente.component';
 import { CadastrarConvenioComponent } from './components/views/convenio/cadastrar-convenio/cadastrar-convenio.component';
 import { EditarConvenioComponent } from './components/views/convenio/editar-convenio/editar-convenio.component';
+import { EditarSintomaComponent } from './components/views/sintoma/editar-sintoma/editar-sintoma.component';
 import { ListarConvenioComponent } from './components/views/convenio/listar-convenio/listar-convenio.component';
 
 
@@ -25,7 +26,7 @@ import { ListarConvenioComponent } from './components/views/convenio/listar-conv
         AppComponent,
         ListarSintomaComponent,
         CadastrarSintomaComponent,
-
+        EditarSintomaComponent,
         CadastrarPacienteComponent,
         ListarPacienteComponent,
         ListarEnfermeiroComponent,

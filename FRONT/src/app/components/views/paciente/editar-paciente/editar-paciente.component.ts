@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Paciente } from 'src/app/models/paciente';
+import { PacienteService } from 'src/app/services/paciente.service';
 
 @Component({
   selector: 'app-editar-paciente',
@@ -7,9 +10,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarPacienteComponent implements OnInit {
 
-  constructor() { }
+  convenioNome!: string;
+  nome!: string;
+  sobrenome!: string;
+  cpf!: string;
+  idade!: number;
+  telefone!: string;
+  email!: string;
+  endereco!: string;
 
-  ngOnInit(): void {
+  constructor(private router: Router, private service: PacienteService) { }
+
+  ngOnInit(): void {}
+
+  editar(): void{
+    let paciente: Paciente = {
+      
+      convenioNome: this.convenioNome,
+      nome!: this.nome,
+      sobrenome!: this.sobrenome,
+      cpf!: this.cpf,
+      idade: this.idade,
+      telefone: this.telefone,
+      email: this.email,
+      endereco: this.endereco
+    };
+
+    this.service.update(paciente).subscribe((paciente) => {
+      console.log(paciente);
+      this.router.navigate(["paciente/listar"]);
+    });
   }
 
 }
