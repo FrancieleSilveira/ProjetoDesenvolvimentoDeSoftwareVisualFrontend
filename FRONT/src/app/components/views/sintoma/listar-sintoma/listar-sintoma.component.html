@@ -2,15 +2,15 @@
 
 <table>
     <tr>
+      <th>Id</th>
       <th>Nome</th>
       <th>Grau de Intensidade</th>
-      <th>Editar</th>
       <th>Excluir</th>
     </tr>
     <tr *ngFor="let sintoma of sintomas">
+        <td>{{ sintoma.id }}</td>
         <td>{{ sintoma.nome }}</td>
         <td>{{ sintoma.grauIntensidade }}</td>
-        <td><a routerLink="/sintoma/editar">Editar Sintoma</a></td>
 
         <td><button (click)="deletar(sintoma.id)">Deletar</button></td>
      </tr>
