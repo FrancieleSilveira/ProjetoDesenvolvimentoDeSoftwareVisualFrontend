@@ -2,6 +2,7 @@
 
 <table>
     <tr>
+      <th>Id</th>
       <th>Convênio</th>
       <th>Endereço</th>
       <th>Telefone</th>
@@ -9,6 +10,7 @@
       <th>Deletar</th>
     </tr>
     <tr *ngFor="let convenio of convenios">
+        <td>{{ convenio.id }} </td>
         <td>{{ convenio.nome }} </td>
         <td>{{ convenio.endereco }}</td>
         <td>{{ convenio.telefone }}</td>
