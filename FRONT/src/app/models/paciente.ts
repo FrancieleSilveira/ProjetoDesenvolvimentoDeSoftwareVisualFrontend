@@ -1,6 +1,6 @@
 export interface Paciente {
     id?: number;
-    convenioNome: string;
+    convenioid: number;
     //convenio: string;
     nome: string;
     sobrenome: string;

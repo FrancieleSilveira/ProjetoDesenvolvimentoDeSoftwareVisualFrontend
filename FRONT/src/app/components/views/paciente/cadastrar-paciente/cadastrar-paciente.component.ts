@@ -11,7 +11,7 @@ import { PacienteService } from 'src/app/services/paciente.service';
 })
 export class CadastrarPacienteComponent implements OnInit {
 
-  convenioNome!: string; 
+  convenioId!: number; 
   matricula!: string;
   nome!: string;
   sobrenome!: string;
@@ -28,7 +28,7 @@ export class CadastrarPacienteComponent implements OnInit {
   cadastrar(): void {
     let paciente: Paciente = {
 
-      convenioNome: this.convenioNome,
+      convenioid: this.convenioId,
       //convenio: this.convenio,
       nome: this.nome,
       sobrenome: this.sobrenome,

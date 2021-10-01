@@ -10,7 +10,7 @@ import { PacienteService } from 'src/app/services/paciente.service';
 })
 export class EditarPacienteComponent implements OnInit {
 
-  convenioNome!: string;
+  convenioId!: number;
   nome!: string;
   sobrenome!: string;
   cpf!: string;
@@ -26,7 +26,7 @@ export class EditarPacienteComponent implements OnInit {
   editar(): void{
     let paciente: Paciente = {
       
-      convenioNome: this.convenioNome,
+      convenioid: this.convenioId,
       nome!: this.nome,
       sobrenome!: this.sobrenome,
       cpf!: this.cpf,
