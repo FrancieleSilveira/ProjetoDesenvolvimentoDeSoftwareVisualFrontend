@@ -26,6 +26,7 @@ export class EditarEnfermeiroComponent implements OnInit {
 
   editar(): void{
     let enfermeiro: Enfermeiro = {
+      id: this.id,
       matricula: parseInt(this.matricula),
       nome: this.nome,
       sobrenome: this.sobrenome,
