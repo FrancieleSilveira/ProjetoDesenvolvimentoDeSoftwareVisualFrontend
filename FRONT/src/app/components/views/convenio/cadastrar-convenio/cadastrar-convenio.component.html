@@ -1,25 +1,24 @@
 <div class="main">
-    <form class="content">
-      <h1>Cadastrar novo convênio</h1>
-  
-      <div id="nome">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" [(ngModel)]="nome" />
-      </div>
-  
-      <div id="endereco">
-        <label for="endereco">Endereço: </label>
-        <input type="text" name="endereco" [(ngModel)]="endereco" />
-      </div>
-  
-      <div id="telefone">
-        <label for="telefone">Telefone: </label>
-        <input type="text" name="telefone" [(ngModel)]="telefone" />
-      </div>
-  
-      <button (click)="cadastrar()">Cadastrar</button><br />
-    </form>
-  </div>
-  
-  <a routerLink="">Voltar para o menu principal</a>
-  
+  <form class="content">
+    <h1>Cadastrar novo convênio</h1>
+
+    <div id="nome">
+      <label for="nome">Nome: </label>
+      <input type="text" name="nome" [(ngModel)]="nome" />
+    </div>
+
+    <div id="endereco">
+      <label for="endereco">Endereço: </label>
+      <input type="text" name="endereco" [(ngModel)]="endereco" />
+    </div>
+
+    <div id="telefone">
+      <label for="telefone">Telefone: </label>
+      <input type="text" name="telefone" [(ngModel)]="telefone" />
+    </div>
+
+    <button (click)="cadastrar()">Cadastrar</button><br />
+  </form>
+</div>
+
+<a routerLink="">Voltar para o menu principal</a>
