@@ -54,13 +54,22 @@ button{
     margin: auto;
     
 }
+.v > a{
+    color: palevioletred
+}
+
+.c > a{
+    color: palevioletred;
+}
+
+.c{
+width: 250px;width: 250px;
+}
 
 a {
     text-decoration: none;
 }
 
-
-/* 
 table {
     
     font-family: arial, sans-serif;
@@ -78,22 +87,3 @@ tr:nth-child(even) {
     background-color: rgba(216, 112, 147, 0.452);
 }
 
-button{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;  
-    color: palevioletred;
-    background-color: aliceblue;
-}
-
-label{
-    text-align: center;
-    font-size: 30px;
-    color: palevioletred;
-}
-
-div{
-
-    text-align: center;
-
-} */

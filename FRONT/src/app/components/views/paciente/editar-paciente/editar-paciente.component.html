@@ -1,3 +1,5 @@
+<div class="main">
+    <form class="content">
 <h1>Editar paciente:</h1>
 
 <div id="convenioId">
@@ -40,7 +42,12 @@
     <input type="text" name="endereco" [(ngModel)] = "endereco"/>
 </div><br>
 
-<button (click)="editar()">Editar</button>
+<div>
+    <button (click)="editar()">Editar</button>
+    <button class="v"><a routerLink="">Voltar</a></button>
+  </div>
+  </form>
+</div>
 
 
 
