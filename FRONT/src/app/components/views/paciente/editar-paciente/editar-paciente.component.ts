@@ -26,7 +26,7 @@ export class EditarPacienteComponent implements OnInit {
   editar(): void{
     let paciente: Paciente = {
       
-      convenioid: this.convenioId,
+      convenioId: this.convenioId,
       nome!: this.nome,
       sobrenome!: this.sobrenome,
       cpf!: this.cpf,
