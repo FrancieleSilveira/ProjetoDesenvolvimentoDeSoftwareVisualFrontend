@@ -1,17 +1,21 @@
-<h1> Cadastrar Sintoma</h1>
+<div class="main">
+  <form class="content">
+    <h1>Cadastrar Sintoma</h1>
 
-<div id="nome">
-    <label for="nome">Nome: </label><br>
-    <input type="text" name="nome" [(ngModel)] = "nome"/>
+    <div id="nome">
+      <label for="nome">Nome: </label><br />
+      <input type="text" name="nome" [(ngModel)]="nome" />
+    </div>
+
+    <div id="grauIntensidade">
+      <label for="grauIntensidade">Grau Intensidade: </label><br />
+      <input type="text" name="grauIntensidade" [(ngModel)]="grauIntensidade" />
+    </div>
+
+    <button class="v">
+      <a class="v" routerLink="">Voltar para o menu principal</a>
+    </button>
+
+    <button (click)="cadastrar()">Cadastrar</button>
+  </form>
 </div>
-
-<div id="grauIntensidade">
-    <label for="grauIntensidade">Grau Intensidade: </label><br>
-    <input type="text" name="grauIntensidade" [(ngModel)] = "grauIntensidade"/>
-</div>
-
-<button (click)="cadastrar()">Cadastrar</button>
-
-<button class="v"><a routerLink="">Voltar</a></button>
-
-

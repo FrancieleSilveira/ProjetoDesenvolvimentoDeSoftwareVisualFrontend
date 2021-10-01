@@ -1,49 +1,53 @@
-<h1> Cadastrar novo enfermeiro:</h1>
+<div class="main">
+  <form class="content">
+    <h1>Cadastrar novo enfermeiro:</h1>
 
-<div id="matricula">
-    <label for="matricula">Matrícula</label><br>
-    <input type="text" name="matricula" [(ngModel)] = "matricula"/>
+    <div id="matricula">
+      <label for="matricula">Matrícula</label><br />
+      <input type="text" name="matricula" [(ngModel)]="matricula" />
+    </div>
+
+    <div id="nome">
+      <label for="nome">Nome</label><br />
+      <input type="text" name="nome" [(ngModel)]="nome" />
+    </div>
+
+    <div id="sobrenome">
+      <label for="sobrenome">Sobrenome</label><br />
+      <input type="text" name="sobrenome" [(ngModel)]="sobrenome" />
+    </div>
+
+    <div id="cpf">
+      <label for="cpf">Cpf</label><br />
+      <input type="text" name="cpf" [(ngModel)]="cpf" />
+    </div>
+
+    <div id="idade">
+      <label for="idade">Idade</label>
+      <input type="number" name="idade" [(ngModel)]="idade" />
+    </div>
+
+    <div id="telefone">
+      <label for="telefone">Telefone</label>
+      <input type="text" name="telefone" [(ngModel)]="telefone" />
+    </div>
+
+    <div id="email">
+      <label for="email">E-mail</label>
+      <input type="text" name="email" [(ngModel)]="email" />
+    </div>
+
+    <div id="endereco">
+      <label for="endereco">Endereço</label>
+      <input type="text" name="endereco" [(ngModel)]="endereco" />
+    </div>
+    <button (click)="cadastrar()">Cadastrar</button>
+  </form>
 </div>
-
-<div id="nome">
-    <label for="nome">Nome</label><br>
-    <input type="text" name="nome" [(ngModel)] = "nome"/>
-</div>
-
-<div id="sobrenome">
-    <label for="sobrenome">Sobrenome</label><br>
-    <input type="text" name="sobrenome" [(ngModel)] = "sobrenome"/>
-</div>
-
-<div id="cpf">
-    <label for="cpf">Cpf</label><br>
-    <input type="text" name="cpf" [(ngModel)] = "cpf"/>
-</div>
-
-<div id="idade">
-    <label for="idade">Idade</label><br>
-    <input type="number" name="idade" [(ngModel)] = "idade"/>
-</div>
-
-<div id="telefone">
-    <label for="telefone">Telefone</label><br>
-    <input type="text" name="telefone" [(ngModel)] = "telefone"/>
-</div>
-
-<div id="email">
-    <label for="email">E-mail</label><br>
-    <input type="text" name="email" [(ngModel)] = "email"/>
-</div>
-
-<div id="endereco">
-    <label for="endereco">Endereço</label><br>
-    <input type="text" name="endereco" [(ngModel)] = "endereco"/>
-</div><br>
 
 <button (click)="cadastrar()">Cadastrar</button>
 
 <button class="v"><a routerLink="">Voltar</a></button>
-
 
 
 
