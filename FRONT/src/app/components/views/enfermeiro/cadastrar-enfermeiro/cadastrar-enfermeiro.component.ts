@@ -40,5 +40,4 @@ export class CadastrarEnfermeiroComponent implements OnInit {
       this.router.navigate(["enfermeiro/listar"]);
     });
   }
-
-  }
+}
