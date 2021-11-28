@@ -1,0 +1,22 @@
+<div class="main">
+    <form class="content">
+      <h1>Cadastrar Triagem</h1>
+  
+      <div id="enfermeiro">
+        <label for="enfermeiro">Enfermeiro: </label><br />
+        <input type="text" name="enfermeiro" [(ngModel)]="enfermeiroId" />
+      </div>
+  
+      <div id="paciente">
+        <label for="paciente">Paciente: </label><br />
+        <input type="text" name="paciente" [(ngModel)]="pacienteId" />
+      </div>
+  
+      <div>
+        <button (click)="cadastrar()">Cadastrar</button>
+        <button class="v"><a routerLink="">Voltar</a></button>
+      </div>
+      
+    </form>
+  </div>
+  

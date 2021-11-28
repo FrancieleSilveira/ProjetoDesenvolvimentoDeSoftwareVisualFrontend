@@ -10,9 +10,10 @@ import { ListarEnfermeiroComponent } from './components/views/enfermeiro/listar-
 import { ListarConvenioComponent } from './components/views/convenio/listar-convenio/listar-convenio.component';
 import { CadastrarConvenioComponent } from './components/views/convenio/cadastrar-convenio/cadastrar-convenio.component';
 import { EditarConvenioComponent } from './components/views/convenio/editar-convenio/editar-convenio.component';
-import {EditarPacienteComponent} from './components/views/paciente/editar-paciente/editar-paciente.component';
-import {EditarEnfermeiroComponent} from './components/views/enfermeiro/editar-enfermeiro/editar-enfermeiro.component';
-import {EditarSintomaComponent} from './components/views/sintoma/editar-sintoma/editar-sintoma.component';
+import { EditarPacienteComponent } from './components/views/paciente/editar-paciente/editar-paciente.component';
+import { EditarEnfermeiroComponent } from './components/views/enfermeiro/editar-enfermeiro/editar-enfermeiro.component';
+import { EditarSintomaComponent } from './components/views/sintoma/editar-sintoma/editar-sintoma.component';
+import { CadastrarTriagemComponent } from './components/views/triagem/cadastrar-triagem/cadastrar-triagem.component';
 
 const routes: Routes = [
         
@@ -80,6 +81,13 @@ const routes: Routes = [
         path: "enfermeiro/editar",
         component: EditarEnfermeiroComponent,
     },
+
+    //triagem
+    {
+        path: "triagem/cadastrar",
+        component: CadastrarTriagemComponent,
+    },
+
 ];
 
 @NgModule({

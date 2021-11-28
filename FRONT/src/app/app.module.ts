@@ -19,6 +19,8 @@ import { CadastrarConvenioComponent } from './components/views/convenio/cadastra
 import { EditarConvenioComponent } from './components/views/convenio/editar-convenio/editar-convenio.component';
 import { EditarSintomaComponent } from './components/views/sintoma/editar-sintoma/editar-sintoma.component';
 import { ListarConvenioComponent } from './components/views/convenio/listar-convenio/listar-convenio.component';
+import { CadastrarTriagemComponent } from './components/views/triagem/cadastrar-triagem/cadastrar-triagem.component';
+import { ListarTriagemComponent } from './components/views/triagem/listar-triagem/listar-triagem.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { ListarConvenioComponent } from './components/views/convenio/listar-conv
         EditarPacienteComponent,
         CadastrarConvenioComponent,
         EditarConvenioComponent,
-        ListarConvenioComponent
+        ListarConvenioComponent,
+        CadastrarTriagemComponent,
+        ListarTriagemComponent
 
     ],
     imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
