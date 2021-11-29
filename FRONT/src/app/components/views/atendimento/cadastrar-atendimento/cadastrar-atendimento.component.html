@@ -8,8 +8,10 @@
     </div>
 
     <div id="enfermeiro">
-      <label for="enfermeiro">Enfermeiro: </label><br />
-      <input type="text" name="enfermeiro" [(ngModel)]="enfermeiro" />
+      <label for="enfermeiro">Enfermeiro</label><br />
+      <select name="enfermeiro" [(ngModel)]="enfermeiroId" name="enfermeiro">
+        <option *ngFor= "let enfermeiro of enfermeiros" value="{{enfermeiro.id}}">{{enfermeiro.nome}}</option>
+      </select>
     </div>
 
     <div>
