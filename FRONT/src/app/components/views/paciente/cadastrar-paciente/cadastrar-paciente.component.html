@@ -2,9 +2,11 @@
   <form class="content">
     <h1>Cadastrar novo paciente:</h1>
 
-    <div id="convenioId">
-      <label for="convenioId">Convênio</label><br />
-      <input type="number" name="convenioId" [(ngModel)]="convenioId" />
+    <div id="convenio">
+      <label for="convenio">Convênio</label><br />
+      <select name="convenio" [(ngModel)]="convenioId" name="convenio">
+        <option *ngFor= "let convenio of convenios" value="{{convenio.id}}">{{convenio.nome}}</option>
+      </select>
     </div>
 
     <div id="nome">

@@ -1,3 +1,6 @@
+import { ListarConvenioComponent } from './../../convenio/listar-convenio/listar-convenio.component';
+import { ConvenioService } from './../../../../services/convenio.service';
+import { Convenio } from './../../../../models/convenio';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Paciente } from 'src/app/models/paciente';
@@ -21,10 +24,15 @@ export class CadastrarPacienteComponent implements OnInit {
   telefone!: string;
   email!: string;
   endereco!: string;
+  convenios!: Convenio[];
 
-  constructor(private router: Router, private service: PacienteService) { }
+  constructor(private router: Router, private service: PacienteService, private convenioService: ConvenioService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.convenioService.list().subscribe((convenios) => {
+      this.convenios;
+    }) 
+  }
 
   cadastrar(): void {
     let paciente: Paciente = {
@@ -38,6 +46,7 @@ export class CadastrarPacienteComponent implements OnInit {
       telefone: this.telefone,
       email: this.email,
       endereco: this.endereco
+    
     };
 
     this.service.create(paciente).subscribe((paciente) => {
