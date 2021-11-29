@@ -14,6 +14,9 @@ import { EditarPacienteComponent } from './components/views/paciente/editar-paci
 import { EditarEnfermeiroComponent } from './components/views/enfermeiro/editar-enfermeiro/editar-enfermeiro.component';
 import { EditarSintomaComponent } from './components/views/sintoma/editar-sintoma/editar-sintoma.component';
 import { CadastrarTriagemComponent } from './components/views/triagem/cadastrar-triagem/cadastrar-triagem.component';
+import { ListarTriagemComponent } from './components/views/triagem/listar-triagem/listar-triagem.component';
+import { ListarAtendimentoComponent } from './components/views/atendimento/listar-atendimento/listar-atendimento.component';
+import { CadastrarAtendimentoComponent } from './components/views/atendimento/cadastrar-atendimento/cadastrar-atendimento.component';
 
 const routes: Routes = [
         
@@ -82,11 +85,25 @@ const routes: Routes = [
         component: EditarEnfermeiroComponent,
     },
 
+    //atendimento
+    {
+        path: "atendimento/cadastrar",
+        component: CadastrarAtendimentoComponent,
+    },
+    {
+        path: "atendimento/listar",
+        component: ListarAtendimentoComponent,
+    },
+
     //triagem
     {
         path: "triagem/cadastrar",
         component: CadastrarTriagemComponent,
     },
+    {
+        path: "triagem/listar",
+        component: ListarTriagemComponent,
+    }
 
 ];
 

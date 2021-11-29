@@ -10,6 +10,8 @@ import { Triagem } from 'src/app/models/triagem';
 })
 export class CadastrarTriagemComponent implements OnInit {
   pacienteId!: string;
+  sintomaId!: string;
+  gravidadeId!: string;
   enfermeiroId!: string;
 
   constructor(private router: Router, private service: TriagemService) { }
@@ -20,12 +22,14 @@ export class CadastrarTriagemComponent implements OnInit {
   cadastrar(): void {
     const triagem: Triagem = {
       paciente: parseInt(this.pacienteId),
+      sintoma: parseInt(this.sintomaId),
+      gravidade: parseInt(this.gravidadeId),
       enfermeiro: parseInt(this.enfermeiroId)
     };
 
     this.service.create(triagem).subscribe((triagem ) => {
       console.log(triagem);
-      this.router.navigate(["paciente/listar"]);
+      this.router.navigate(["triagem/listar"]);
     });
   }
 

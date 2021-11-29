@@ -11,6 +11,16 @@
         <label for="paciente">Paciente: </label><br />
         <input type="text" name="paciente" [(ngModel)]="pacienteId" />
       </div>
+
+      <div id="sintoma">
+        <label for="sintoma">Sintoma: </label><br />
+        <input type="text" name="sintoma" [(ngModel)]="sintomaId" />
+      </div>
+
+      <div id="gravidade">
+        <label for="gravidade">Gravidade: </label><br />
+        <input type="text" name="gravidade" [(ngModel)]="gravidadeId" />
+      </div>
   
       <div>
         <button (click)="cadastrar()">Cadastrar</button>

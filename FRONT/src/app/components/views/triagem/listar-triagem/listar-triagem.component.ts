@@ -12,4 +12,15 @@ export class ListarTriagemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // triagens: Triagem[] = [];
+
+  //   constructor(private router: Router, private service: TriagemService) {}
+
+  //   ngOnInit(): void {
+  //       this.service.list().subscribe((triagens) => {
+  //           this.triagens = triagens;
+  //           console.log(triagens);
+  //       });
+  //   }
+
 }
