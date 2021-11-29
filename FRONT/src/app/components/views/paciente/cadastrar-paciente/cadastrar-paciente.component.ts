@@ -24,13 +24,13 @@ export class CadastrarPacienteComponent implements OnInit {
   telefone!: string;
   email!: string;
   endereco!: string;
-  convenios!: Convenio[];
+  convenios: Convenio[] = [];
 
   constructor(private router: Router, private service: PacienteService, private convenioService: ConvenioService) { }
 
   ngOnInit(): void {
     this.convenioService.list().subscribe((convenios) => {
-      this.convenios;
+      this.convenios = convenios;
     }) 
   }
 
