@@ -2,15 +2,22 @@
     <form class="content">
       <h1>Cadastrar Triagem</h1>
   
-      <div id="enfermeiro">
+      <!-- <div id="enfermeiro">
         <label for="enfermeiro">Enfermeiro: </label><br />
         <input type="text" name="enfermeiro" [(ngModel)]="enfermeiroId" />
-      </div>
-  
+      </div> -->
+      
       <div id="paciente">
+        <label for="paciente">Paciente</label><br />
+        <select name="paciente" [(ngModel)]="pacienteId" name="paciente">
+          <option *ngFor= "let paciente of pacientes" value="{{paciente.id}}">{{paciente.nome}}</option>
+        </select>
+      </div>
+
+      <!-- <div id="paciente">
         <label for="paciente">Paciente: </label><br />
         <input type="text" name="paciente" [(ngModel)]="pacienteId" />
-      </div>
+      </div> -->
 
       <div id="sintoma">
         <label for="sintoma">Sintoma: </label><br />
